@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #54b349;
+}
+
+h3 {
+  font-size: 24px;
+  color: #80db75;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #80db75;
+}
+
+.product-contain {
+  display: flex;
+  padding: 45px 0 50px;
+}
+
+.product {
+  color: #ffffff;
+  width: 50%;
+}
+.product ul {
+  padding-top: 30px;
+  font-size: 20px;
+  list-style-image: url("../images/check.png");
+  list-style-position: inside;
+}
+.product ul li {
+  padding-top: 15px;
+}
+.product img {
+  display: block;
+  margin-left: auto;
+  width: 80%;
+  max-width: 550px;
+}
+
+.about {
+  display: flex;
+  padding: 50px 0 50px;
+}
+
+.offer {
+  width: 55%;
+}
+.offer p {
+  margin-top: 20px;
+}
+
+.photo {
+  width: 45%;
+}
+.photo img {
+  display: block;
+  margin-left: auto;
+  width: 80%;
+  max-width: 650px;
+  border: 3px solid #80db75;
+}
+
+.dignity, .section-reviews {
+  background-color: #f5f5f5;
+}
+
+.main-offer {
+  padding: 50px 0 50px;
+}
+.main-offer h2 {
+  text-align: center;
+}
+
+.dignity-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pluses {
+  width: 49%;
+}
+.pluses ul {
+  list-style-image: url("../images/plus.png");
+  list-style-position: inside;
+}
+.pluses li {
+  margin-top: 30px;
+}
+
+.screenshots-content, .reviews-content, .case {
+  padding: 50px 0 50px;
+}
+.screenshots-content h2, .reviews-content h2, .case h2 {
+  text-align: center;
+}
+
+.screenshots-offer, .reviews-offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.screenshots, .reviews {
+  width: 49%;
+}
+
+.screenshot {
+  display: flex;
+  padding-top: 30px;
+}
+.screenshot .img {
+  width: 35%;
+}
+.screenshot .img img {
+  width: 100%;
+  border: 2px solid #80db75;
+}
+
+.screen {
+  width: 65%;
+  margin-left: 15px;
+}
+.screen p {
+  padding-top: 15px;
+}
+
+.review {
+  display: flex;
+  padding-top: 23px;
+}
+
+.avatar {
+  width: 13%;
+}
+.avatar img {
+  border-radius: 50%;
+  border: 2px solid #80db75;
+  width: 100%;
+}
+
+.comment {
+  width: 87%;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 27px;
+  position: relative;
+}
+.comment::before {
+  content: "";
+  left: -20px;
+  top: 25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent #ebebeb transparent transparent;
+  position: absolute;
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.service {
+  width: 25%;
+  background: #80db75;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.service h3 {
+  color: #ffffff;
+  padding: 17px 0 17px;
+  text-align: center;
+}
+
+.service-container {
+  width: 87%;
+  margin: 0 auto;
+}
+.service-container ol {
+  list-style-position: inside;
+}
+.service-container li {
+  margin-top: 13px;
+  color: #ffffff;
+}
+.service-container a {
+  display: block;
+  background: #ffffff;
+  text-decoration: none;
+  padding: 13px 45% 13px;
+  border-radius: 7px;
+  margin: 20px 0 20px;
+  color: #54b349;
+  font-size: 18px;
+}
+
+.price {
+  width: 99%;
+  background-color: #ffffff;
+  font-size: 24px;
+  color: #54b349;
+  margin: 0 auto;
+}
+.price p {
+  padding: 17px 0 17px;
+  text-align: center;
+}
+
+footer {
+  background: #80db75;
+}
+footer h2 {
+  color: #ffffff;
+}
+
+.case-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cont {
+  width: 66%;
+  display: flex;
+}
+
+.user-info {
+  width: 64%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.user-info a {
+  display: block;
+  background: #ffffff;
+  text-decoration: none;
+  border-radius: 7px;
+  color: #54b349;
+  font-size: 16px;
+  padding: 15px 50px;
+}
+
+label {
+  width: 100%;
+  padding-bottom: 20px;
+}
+label input, label textarea {
+  width: 98%;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  padding: 15px 0 15px 10px;
+}
+
+textarea {
+  min-height: 180px;
+}
+
+.contacts {
+  margin-left: 45px;
+}
+.contacts p {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.social {
+  margin-top: 10px;
+  display: flex;
+}
+.social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 7px;
+}
+
+/*# sourceMappingURL=main.css.map */

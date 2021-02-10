@@ -1,0 +1,338 @@
+$mainColor: #80db75;
+$secondColor: #f5f5f5;
+$textMainColor: #ffffff;
+$textColor: #54b349;
+$commentColor: #ebebeb;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  color: $textColor;
+}
+
+h3 {
+  font-size: 24px;
+  color: $mainColor;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: $mainColor;
+}
+
+.product-contain {
+  display: flex;
+  padding: 45px 0 50px;
+}
+
+.product {
+  color: $textMainColor;
+  width: 50%;
+
+  ul {
+    padding-top: 30px;
+    font-size: 20px;
+    list-style-image: url("../images/check.png");
+    list-style-position: inside;
+
+    li {
+      padding-top: 15px;
+    }
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    width: 80%;
+    max-width: 550px;
+  }
+}
+
+.about {
+  display: flex;
+  padding: 50px 0 50px;
+}
+
+.offer {
+  width: 55%;
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+.photo {
+  width: 45%;
+
+  img {
+    display: block;
+    margin-left: auto;
+    width: 80%;
+    max-width: 650px;
+    border: 3px solid $mainColor;
+  }
+}
+
+.dignity, .section-reviews {
+  background-color: $secondColor;
+}
+
+.main-offer {
+  padding: 50px 0 50px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.dignity-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pluses {
+  width: 49%;
+
+  ul {
+    list-style-image: url("../images/plus.png");
+    list-style-position: inside;
+  }
+
+  li {
+    margin-top: 30px;
+  }
+
+}
+
+.screenshots-content, .reviews-content, .case{
+  padding: 50px 0 50px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.screenshots-offer, .reviews-offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.screenshots, .reviews {
+  width: 49%;
+}
+
+.screenshot {
+  display: flex;
+  padding-top: 30px;
+
+  .img {
+    width: 35%;
+
+    img {
+      width: 100%;
+      border: 2px solid $mainColor;
+    }
+  }
+}
+
+.screen {
+  width: 65%;
+  margin-left: 15px;
+
+  p {
+    padding-top: 15px;
+  }
+}
+
+.review {
+  display: flex;
+  padding-top: 23px;
+}
+
+.avatar {
+  width: 13%;
+
+  img{
+    border-radius: 50%;
+    border: 2px solid #80db75;
+    width: 100%;
+  }
+
+}
+
+.comment {
+  width: 87%;
+  background-color: $commentColor;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 27px;
+  position: relative;
+
+  &::before {
+    content: "";
+    left: -20px; top: 25px;
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent $commentColor transparent transparent;
+    position: absolute;
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.service {
+  width: 25%;
+  background: $mainColor;
+  border-radius: 10px;
+  margin-top: 30px;
+
+  h3 {
+    color: $textMainColor;
+    padding: 17px 0 17px;
+    text-align: center;
+  }
+}
+
+.service-container {
+  width: 87%;
+  margin: 0 auto;
+
+  ol {
+    list-style-position: inside;
+  }
+
+  li {
+    margin-top: 13px;
+    color: $textMainColor;
+  }
+
+  a {
+    display: block;
+    background: $textMainColor;
+    text-decoration: none;
+    padding: 13px 45% 13px;
+    border-radius: 7px;
+    margin: 20px 0 20px;
+    color: $textColor;
+    font-size: 18px;
+  }
+}
+
+.price {
+  width: 99%;
+  background-color: $textMainColor;
+  font-size: 24px;
+  color: $textColor;
+  margin: 0 auto;
+
+  p {
+    padding: 17px 0 17px;
+    text-align: center;
+  }
+}
+
+footer {
+  background: $mainColor;
+
+  h2 {
+    color: $textMainColor;
+  }
+}
+
+.case-cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cont {
+  width: 66%;
+  display: flex;
+}
+
+.user-info {
+  width: 64%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    display: block;
+    background: $textMainColor;
+    text-decoration: none;
+    border-radius: 7px;
+    color: $textColor;
+    font-size: 16px;
+    padding: 15px 50px;
+  }
+}
+
+label {
+  width: 100%;
+  padding-bottom: 20px;
+
+  input, textarea{
+    width: 98%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding: 15px 0 15px 10px;
+  }
+}
+
+textarea {
+  min-height: 180px;
+}
+
+.contacts {
+  margin-left: 45px;
+
+  p {
+    color: $textMainColor;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+
+.social {
+  margin-top: 10px;
+  display: flex;
+
+  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $textMainColor;
+    margin-right: 7px;
+  }
+}
+
+
